@@ -2,4 +2,4 @@
 
 后端知识点总结
 
-见 https://github.com/xingyao500/backend-knownledge/issues
+见 [issues](https://github.com/xingyao500/backend-knownledge/issues)
