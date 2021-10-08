@@ -34,6 +34,22 @@
 - 文件状态
 - 设备状态
 
+**调度时间**
+
+- 到达时间（Arrival Time）：进程进入 Ready 状态队列的时间点，以下简称 at。
+- 完成时间（Completion Time）：进程从 Ready 到执行完成的时间点，以下简称 ct。
+- 等待时间（Waiting Time）：进程从 Ready 队列到被 CPU 开始执行变成 Running 状态的时间，以下简称 wt。
+- 执行时间（Burst Time）：进程在 CPU 中的执行总时间，以下简称 bt。
+
+```bash
+# ct - bt = wt + bt
+at                            ct
+|------wt------|------bt------|
+Ready -------> Running -----> Completion
+```
+
+
+
 ### 线程
 
 os 调度最小单位，被包含在进程之中，是一段单一顺序控制流。线程间共享进程资源同时又拥有自身的栈区。
